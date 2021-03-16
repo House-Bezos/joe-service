@@ -10,9 +10,7 @@ const ReviewItem = ({ review, keyword }) => {
   let [year, month, day] = review_date.split('T')[0].split('-');
 
   const highlightText = (text, keyword) => {
-    if (!keyword) {
-      return text;
-    }
+    if (!keyword) return text;
 
     return (
       <span>
@@ -51,4 +49,3 @@ const ReviewItem = ({ review, keyword }) => {
 };
 
 export default ReviewItem;
-
