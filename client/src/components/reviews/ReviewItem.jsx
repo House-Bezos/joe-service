@@ -13,14 +13,15 @@ const ReviewItem = ({ review, keyword }) => {
     if (!keyword) {
       return text;
     }
-    // I want to understand exactly how this works, specifically reduce
-    return (<span>
-      { text.split(keyword)
-        .reduce((acc, current) => {
-          return acc.concat(<span className={s.highlight} key={keyword + current}>{keyword}</span>, current);
-        }, [])
-      }
-    </span>);
+
+    return (
+      <span>
+        {text.split(keyword)
+          .reduce((acc, current) => {
+            return acc.concat(<span className={s.highlight} key={keyword + current}>{keyword}</span>, current);
+          }, [])}
+      </span>
+    );
   };
 
   return (

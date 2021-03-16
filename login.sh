@@ -1,1 +1,1 @@
-ssh -i "/Users/joebuono/Desktop/Coding/Hack_Reactor/fec/joe-service/fecJoe.pem" ec2-user@ec2-3-129-23-189.us-east-2.compute.amazonaws.com
+ssh -i "/Users/joebuono/Desktop/Coding/Hack_Reactor/fec/joe-service/fecJoe.pem" ec2-user@ec2-3-138-120-67.us-east-2.compute.amazonaws.com
